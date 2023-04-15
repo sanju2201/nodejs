@@ -1,0 +1,39 @@
+[
+    {
+      "id": "a66b9b37-9a8a-426e-b1e5-fbfc0ee418d6",
+      "title": "The Lion King",
+      "year": "2019",
+      "runtime": "118 min",
+      "rating": "7.8",
+      "genre": "Action, Adventure, Fantasy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
+    },
+    {
+        "id": "c5ac7064-0e9d-476c-b5df-c6ef36a20baf",
+      "title": "Mowgli: Legend of the Jungle",
+      "year": "2018",
+      "runtime": "104 min",
+       "rating": "7.8",
+      "genre": "Action, Adventure, Fantasy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
+    },
+    {
+        "id": "d0d3e391-61bc-43e9-af9f-79349fba62e8",
+      "title": "Doctor Strange",
+      "year": "2016",
+      "runtime": "115 min",
+       "rating": "7.8",
+      "genre": "Action, Adventure, Fantasy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg"
+    },
+    {
+      "id": "eb63fa05-dbdd-40a4-8413-749d579d1fa3",
+      "title": "John Wick",
+      "year": "2014",
+      "runtime": "101 min",
+       "rating": "7.8",
+      "genre": "Action, Adventure, Fantasy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
+    }
+
+  ]
