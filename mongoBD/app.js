@@ -12,7 +12,6 @@ async function insert() {
     } catch (err) {
         console.log(err);
     }
-
 }
 insert();
 
