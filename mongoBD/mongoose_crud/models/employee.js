@@ -6,7 +6,8 @@ const employeeSchema = mongoose.Schema({
     age: { type: Number, required: true },
     status: { type: Boolean },
     hobbies: { type: [String] },
-    salary: { type: Number }
+    salary: { type: Number },
+    active: { type: Boolean, default: true }
 })
 
 //creating collection

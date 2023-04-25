@@ -36,7 +36,7 @@ const createOperation = async () => {
         //Everything is optional above because we have not added validation properties
         //Any new property it will not take until we defined in schema
         const employeePost = new Employee({
-            firstName: "Vijay",
+            firstName: "Sanju",
             age: 26,
             status: true,
             hobbies: ['music', 'learning'],
@@ -45,7 +45,6 @@ const createOperation = async () => {
 
         const result = await employeePost.save();
         console.log(result);
-
     }
     catch (err) {
         console.log(err);
@@ -58,7 +57,6 @@ const findOperation = async () => {
     try {
         // let result = await Employee.find();
         let result = await Employee.find({ age: 25, firstName: "Sanju" });
-
         console.log(result);
     }
     catch (err) {
@@ -71,9 +69,7 @@ const findOperation = async () => {
 const updateOperation = async () => {
 
     try {
-
         let filter = { _id: '6447f1bf26fac34b665c5a04' };
-
         let update = { salary: 40000 };
 
         //it will return return any document
@@ -84,17 +80,48 @@ const updateOperation = async () => {
 
         //it is returning the document but new one
         let result = await Employee.findOneAndUpdate(filter, update, { new: true });
-
         console.log(result);
-
     }
-
     catch (err) {
-
         console.log(err);
-
     }
-
 }
 
-updateOperation();
+// updateOperation();
+
+const deleteOperation = async () => {
+    try {
+        let filter = { _id: '6447f1bf26fac34b665c5a04' };
+        let result = await Employee.deleteOne(filter);
+        console.log(result);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+// deleteOperation();
+
+const countOperation = async () => {
+    try {
+        let result = await Employee.find().count();
+        console.log(result);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+// countOperation();
+
+const pagination = async () => {
+    try {
+        let current_page = 0;  // page no should be come from frontend
+        let total_per_page = 3;
+        let skip_scenario = (current_page * total_per_page);
+        let result = await Employee.find().skip(skip_scenario).limit(total_per_page);
+        console.log(result);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+pagination();
